@@ -155,7 +155,7 @@ export async function buildRedesign(p,root){
   notes(s,'单车起点通过空间落区获得社区编号，出租车使用官方上车社区编号。按日期或社区日期聚合后连接，天气和日历按日期匹配。日级366行，社区日级28182行。',Object.values(URL));
 
   // 4 Exact measured size and editable quality table.
-  s=page(p,'数据规模与清洗质量',4,{source:'有效规模扣除滑板车与重复记录，ZIP、分页缓存和衍生表不重复计量。'});
+  s=page(p,'数据规模与清洗质量',4,{source:'2024 年。有效规模扣除滑板车与重复记录，ZIP、分页缓存和衍生表不重复计量。'});
   txt(s,audit.total_decimal_GB.toFixed(3),64,184,345,128,108,C.teal,false,true);
   txt(s,'GB',70,321,180,48,33,C.ink,true,true);
   txt(s,'有效原始记录字节',68,385,330,42,27,C.ink,true);
@@ -184,7 +184,7 @@ export async function buildRedesign(p,root){
   notes(s,'月内日均量按该月实际日数求均值。幅度比值来自12个月日均量的最大值与最小值，不把月份长度差异当作季节差异。单车图中已排除滑板车。',[URL.bike,URL.taxi]);
 
   // 6 Editable confidence-interval chart, including the zero-crossing caveat.
-  s=page(p,'降水与单车记录量下降相关',6,{source:'366 天，控制日历和天气变量。来源：Divvy、芝加哥市、NOAA、OPM。'});
+  s=page(p,'降水与单车记录量下降相关',6,{source:'2024，366 天，控制日历和天气变量。来源：Divvy、芝加哥市、NOAA、OPM。'});
   const br=d.models.divvy.precip_10mm,tr=d.models.taxi.precip_10mm;
   txt(s,pct(br.percent),64,203,390,139,96,C.teal,false,true);
   txt(s,'每增加 10 mm 日降水',68,351,360,41,27,C.ink,true);
