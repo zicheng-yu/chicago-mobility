@@ -244,7 +244,7 @@ export async function buildRedesign(p,root){
   txt(s,'公开运营记录\n两个机场天气代理\n联邦节假日仅 11 天\n关联不等同因果',826,242,365,168,25,C.pale);
   txt(s,'AI 使用与复现',826,445,365,41,27,C.gold,true);
   txt(s,'AI 参与代码、分析与封面。\n通过原始条数、校验值和\n聚合对账核验结果。',826,505,365,110,24,C.pale);
-  const rlink=txt(s,'代码与完整报告  '+repo.url+'  （私有）',64,658,1152,38,20,C.pale);
+  const rlink=txt(s,'代码与完整报告  '+repo.url,64,658,1152,38,20,C.pale);
   rlink.text.get(repo.url).link={uri:repo.url,isExternal:true};rlink.text.get(repo.url).color=C.pale;
-  notes(s,'数据和结论保持此前核验版本。两类记录没有共同乘客ID，不能证明个体转乘。模型控制了部分日历和天气因素，仍是观察性关联。AI_USAGE.md记录AI参与方式，封面示意图来自内置image_gen，不能作为真实事件记录。私有仓库访问需相应权限。',Object.values(URL));
+  notes(s,'数据和结论保持此前核验版本。两类记录没有共同乘客ID，不能证明个体转乘。模型控制了部分日历和天气因素，仍是观察性关联。AI_USAGE.md记录AI参与方式，封面示意图来自内置image_gen，不能作为真实事件记录。',Object.values(URL));
 }

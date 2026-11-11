@@ -2,7 +2,7 @@
 
 《大数据原理与应用》中期项目。使用 2024 年共享单车、出租车、天气、联邦节假日与社区边界，完成真实数据采集、清洗、融合、分析和可视化。
 
-[项目仓库](https://github.com/zicheng-yu/chicago-mobility-midterm)为私有仓库，提交时可使用本地提交包，或为评阅人提供仓库访问权限。
+[项目仓库](https://github.com/zicheng-yu/chicago-mobility)目前公开，也可使用本地提交包提交。
 
 ## 本次结果
 
