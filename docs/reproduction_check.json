@@ -1,0 +1,16 @@
+{
+  "fresh_index_copy": true,
+  "large_original_datasets_absent": true,
+  "summary_fields_match": true,
+  "float_relative_tolerance": 1e-10,
+  "core_figures_reproduced": 7,
+  "png_hash_matches": {
+    "07_day_clusters.png": true,
+    "06_community_precip.png": true,
+    "04_daytype_hours.png": true,
+    "01_monthly.png": true,
+    "02_weather_scatter.png": true,
+    "03_adjusted_associations.png": true,
+    "05_community_maps.png": true
+  }
+}

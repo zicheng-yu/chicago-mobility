@@ -1,0 +1,36 @@
+{
+  "counting_rule": "Exact original CSV record bytes of unique 2024 bicycles plus original Taxi JSON day archives; no scooters, archives, page caches or derived files",
+  "source_original_file_bytes": {
+    "divvy": 1189139393,
+    "taxi": 1986872838
+  },
+  "source_bytes": {
+    "divvy": 1163088709,
+    "taxi": 1986872838
+  },
+  "source_files": {
+    "divvy": 12,
+    "taxi": 366
+  },
+  "total_bytes": 3149961547,
+  "total_decimal_GB": 3.149961547,
+  "total_binary_GiB": 2.9336302978917956,
+  "max_source_fraction": 0.6307609817942962,
+  "independent_source_families_conservative": 4,
+  "source_forms": [
+    "operational CSV files",
+    "public JSON API",
+    "official calendar webpage",
+    "geospatial GeoJSON"
+  ],
+  "checks": {
+    "all_12_months": true,
+    "taxi_raw_ids_and_start_dates_valid": true,
+    "bicycle_scope_matches_cleaning": true,
+    "total_at_least_2GB": true,
+    "total_at_least_2GiB": true,
+    "main_sources_at_least_200MB": true,
+    "single_source_at_most_80percent": true
+  },
+  "all_scale_checks_pass": true
+}

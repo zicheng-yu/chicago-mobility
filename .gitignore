@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+data/raw/divvy/
+data/raw/taxi/
+data/raw/holidays/
+data/downloads/
+data/cleaned/
+*.partial
+build/
+.DS_Store
+node_modules/
+data/metadata/*.html
+.chart-data-*/
+.codex-finalizer/

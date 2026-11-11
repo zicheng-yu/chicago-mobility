@@ -1,0 +1,122 @@
+{
+  "files": [
+    {
+      "file": "202401-divvy-tripdata.csv",
+      "rows": 144873,
+      "bytes": 29458763,
+      "sha256": "f28b3bc82fd43c9ebe24b9fcddd9000536f22e16f8aa60302a0d29dd98f84763",
+      "eligible_rows": 144873,
+      "eligible_record_bytes": 29458576
+    },
+    {
+      "file": "202402-divvy-tripdata.csv",
+      "rows": 223164,
+      "bytes": 45854560,
+      "sha256": "76b1186c37dcdc0e3c4a168e31babe2afe78a8019df5437f284f8981745e926b",
+      "eligible_rows": 223164,
+      "eligible_record_bytes": 45854373
+    },
+    {
+      "file": "202403-divvy-tripdata.csv",
+      "rows": 301687,
+      "bytes": 60761710,
+      "sha256": "97e72ab5d576184d53292a8402df89c850870ad3030c8fbdc3ef5c69d4430608",
+      "eligible_rows": 301687,
+      "eligible_record_bytes": 60761523
+    },
+    {
+      "file": "202404-divvy-tripdata.csv",
+      "rows": 415025,
+      "bytes": 82116053,
+      "sha256": "de49c2550de007934a047842bd94be0a5dcea5a72bb872f82c07dce299a39a52",
+      "eligible_rows": 415025,
+      "eligible_record_bytes": 82115866
+    },
+    {
+      "file": "202405-divvy-tripdata.csv",
+      "rows": 609493,
+      "bytes": 120615989,
+      "sha256": "353ab4419fa0c0eac6c3e45dd0c57ed1a20b3c02c2a402b65fc3a7bd3711bddb",
+      "eligible_rows": 609493,
+      "eligible_record_bytes": 120615802
+    },
+    {
+      "file": "202406-divvy-tripdata.csv",
+      "rows": 710721,
+      "bytes": 144699212,
+      "sha256": "c56c7759df4f44ea9be6a91bfddb59f1043fb94e440661e4919b8ae91cc3fa74",
+      "eligible_rows": 710510,
+      "eligible_record_bytes": 144657326
+    },
+    {
+      "file": "202407-divvy-tripdata.csv",
+      "rows": 748962,
+      "bytes": 153564604,
+      "sha256": "01f0f25444f5d39d9306a9fc46909aa9e5411d64f5533ce1d9904dcd32ab7611",
+      "eligible_rows": 748962,
+      "eligible_record_bytes": 153564417
+    },
+    {
+      "file": "202408-divvy-tripdata.csv",
+      "rows": 755639,
+      "bytes": 154549343,
+      "sha256": "7ea45b4a3e41c9987af762931fa207133d9af5bb226064260ac7579ae7a6c3bc",
+      "eligible_rows": 755639,
+      "eligible_record_bytes": 154549156
+    },
+    {
+      "file": "202409-divvy-tripdata.csv",
+      "rows": 821276,
+      "bytes": 164926608,
+      "sha256": "604ad3011ed67f3f967325e37e247246368f7d14d54a60448ee64c657bcc980e",
+      "eligible_rows": 676939,
+      "eligible_record_bytes": 138919680
+    },
+    {
+      "file": "202410-divvy-tripdata.csv",
+      "rows": 616281,
+      "bytes": 126692520,
+      "sha256": "7c492164c4816e14d9115d8160b6264074fec22e7de9b357c2a4050b6934de18",
+      "eligible_rows": 616281,
+      "eligible_record_bytes": 126692333
+    },
+    {
+      "file": "202411-divvy-tripdata.csv",
+      "rows": 335075,
+      "bytes": 69057866,
+      "sha256": "7bbe1626d4aa6009eb17e0bae95fd3c66a7221a4e3a546f3ecb314e9cbd3f0d0",
+      "eligible_rows": 335075,
+      "eligible_record_bytes": 69057679
+    },
+    {
+      "file": "202412-divvy-tripdata.csv",
+      "rows": 178372,
+      "bytes": 36842165,
+      "sha256": "f8bc7722b949245151903745c138ff9aae46a8791ec3e7fad0b8b22f17e79138",
+      "eligible_rows": 178372,
+      "eligible_record_bytes": 36841978
+    }
+  ],
+  "type_counts": {
+    "electric_bike": 2980595,
+    "classic_bike": 2735636,
+    "electric_scooter": 144337
+  },
+  "excluded_scope_rows": {
+    "duplicate_id": 211,
+    "non_bicycle": 144337
+  },
+  "total_rows": 5860568,
+  "total_bytes": 1189139393,
+  "eligible_rows": 5716020,
+  "eligible_record_bytes": 1163088709,
+  "scope": {
+    "year": 2024,
+    "rideable_types": [
+      "classic_bike",
+      "electric_bike"
+    ],
+    "dedup": "first ID in source-file order"
+  },
+  "byte_rule": "Exact original UTF-8 record bytes consumed by CSV reader; excludes headers, non-bicycles, invalid/out-of-year start and repeated IDs"
+}

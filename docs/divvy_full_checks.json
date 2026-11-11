@@ -1,0 +1,13 @@
+{
+  "source_rows": 5860568,
+  "excluded_scooters": 144337,
+  "duplicate_ids": 211,
+  "bicycle_rows_before_duration_filter": 5716020,
+  "cleaned_rows": 5583690,
+  "spatial_match_rows": 5500154,
+  "daily_rows": 366,
+  "hourly_rows": 8784,
+  "community_daily_rows": 28182,
+  "streaming_profile_matches_dataframe_cleaning": true,
+  "aggregate_totals_match": true
+}

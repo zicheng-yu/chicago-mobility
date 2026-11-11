@@ -1,0 +1,25 @@
+{
+  "station_rows": 732,
+  "station_ids": [
+    "USW00014819",
+    "USW00094846"
+  ],
+  "days": 366,
+  "rejected_quality_flags": {
+    "PRCP": 0,
+    "TMAX": 0,
+    "TMIN": 0,
+    "SNOW": 0,
+    "AWND": 0
+  },
+  "daily_missing": {
+    "precip_mm": 0,
+    "tmax_c": 0,
+    "tmin_c": 0,
+    "snow_mm": 0,
+    "wind_mps": 0,
+    "tavg_c": 0,
+    "weather_stations": 0,
+    "rain_day": 0
+  }
+}

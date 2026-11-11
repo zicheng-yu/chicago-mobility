@@ -1,0 +1,1139 @@
+{
+  "summary": {
+    "period": [
+      "2024-01-01",
+      "2024-12-31"
+    ],
+    "days": 366,
+    "counts": {
+      "divvy": {
+        "raw": 5860568,
+        "cleaned": 5583690,
+        "retained_pct": 95.27557738430814,
+        "daily_min": 540,
+        "daily_max": 31388,
+        "daily_mean": 15255.983606557376
+      },
+      "taxi": {
+        "raw": 6480350,
+        "cleaned": 6107775,
+        "retained_pct": 94.25069633584606,
+        "daily_min": 5088,
+        "daily_max": 24924,
+        "daily_mean": 16687.909836065573
+      }
+    },
+    "rain_days": 98,
+    "holiday_days": 11,
+    "spatial_match_rates": {
+      "divvy": 0.9850392840576752,
+      "taxi": 0.9769138516071728
+    },
+    "models": {
+      "divvy": {
+        "precip_10mm": {
+          "mode": "divvy",
+          "term": "precip_10mm",
+          "coef": -0.20862921980746052,
+          "se_hac7": 0.057463923507226226,
+          "percent": -18.83038592935198,
+          "low_percent": -27.476425385162806,
+          "high_percent": -9.153592009652051,
+          "r2": 0.8821781510477588,
+          "n": 366
+        },
+        "holiday": {
+          "mode": "divvy",
+          "term": "holiday",
+          "coef": -0.29749800524020736,
+          "se_hac7": 0.1577435766712172,
+          "percent": -25.732593532433206,
+          "low_percent": -45.48397089351649,
+          "high_percent": 1.1747875591843893,
+          "r2": 0.8821781510477588,
+          "n": 366
+        }
+      },
+      "taxi": {
+        "precip_10mm": {
+          "mode": "taxi",
+          "term": "precip_10mm",
+          "coef": 0.018162222054831055,
+          "se_hac7": 0.010399712608246977,
+          "percent": 1.832815827768701,
+          "low_percent": -0.22187495855450282,
+          "high_percent": 3.929818034813108,
+          "r2": 0.7230139897654041,
+          "n": 366
+        },
+        "holiday": {
+          "mode": "taxi",
+          "term": "holiday",
+          "coef": -0.4935658041670623,
+          "se_hac7": 0.10850310065602085,
+          "percent": -38.95542214301604,
+          "low_percent": -50.64997341733219,
+          "high_percent": -24.489595167793947,
+          "r2": 0.7230139897654041,
+          "n": 366
+        }
+      }
+    },
+    "model_rows": 366,
+    "spatial_comparable_communities": 22,
+    "community_precip_counts": {
+      "compared": 22,
+      "bicycle_lower": 22,
+      "taxi_lower": 12,
+      "taxi_higher": 10
+    },
+    "clustering": {
+      "k": 3,
+      "random_state": 42,
+      "n_init": 20,
+      "features": [
+        "taxi_trips",
+        "tavg_c",
+        "precip_mm",
+        "wind_mps"
+      ],
+      "silhouette": 0.29020975265209464,
+      "profiles": [
+        {
+          "cluster": "类别 A",
+          "taxi_trips": 14758.716049382716,
+          "tavg_c": 4.9393518518518515,
+          "precip_mm": 0.8688271604938271,
+          "wind_mps": 4.993518518518519,
+          "days": 162
+        },
+        {
+          "cluster": "类别 B",
+          "taxi_trips": 17404.083333333332,
+          "tavg_c": 17.049305555555556,
+          "precip_mm": 18.155555555555555,
+          "wind_mps": 4.723611111111111,
+          "days": 36
+        },
+        {
+          "cluster": "类别 C",
+          "taxi_trips": 18394.738095238095,
+          "tavg_c": 20.16026785714286,
+          "precip_mm": 0.7235119047619047,
+          "wind_mps": 3.5717261904761903,
+          "days": 168
+        }
+      ]
+    }
+  },
+  "monthly": [
+    {
+      "month": 1,
+      "divvy_trips": 4522.8387096774,
+      "taxi_trips": 13030.064516129,
+      "tavg_c": -2.7572580645,
+      "precip_mm": 2.3774193548
+    },
+    {
+      "month": 2,
+      "divvy_trips": 7545.3448275862,
+      "taxi_trips": 14423.0,
+      "tavg_c": 4.5818965517,
+      "precip_mm": 0.5844827586
+    },
+    {
+      "month": 3,
+      "divvy_trips": 9505.935483871,
+      "taxi_trips": 16009.1612903226,
+      "tavg_c": 7.0362903226,
+      "precip_mm": 3.1096774194
+    },
+    {
+      "month": 4,
+      "divvy_trips": 13477.1,
+      "taxi_trips": 17239.5666666667,
+      "tavg_c": 11.8133333333,
+      "precip_mm": 3.3683333333
+    },
+    {
+      "month": 5,
+      "divvy_trips": 19132.064516129,
+      "taxi_trips": 18833.064516129,
+      "tavg_c": 18.6370967742,
+      "precip_mm": 3.5177419355
+    },
+    {
+      "month": 6,
+      "divvy_trips": 23065.1666666667,
+      "taxi_trips": 19023.9333333333,
+      "tavg_c": 23.725,
+      "precip_mm": 2.7716666667
+    },
+    {
+      "month": 7,
+      "divvy_trips": 23592.8064516129,
+      "taxi_trips": 16585.6774193548,
+      "tavg_c": 24.1822580645,
+      "precip_mm": 5.0048387097
+    },
+    {
+      "month": 8,
+      "divvy_trips": 23799.3225806452,
+      "taxi_trips": 17020.2258064516,
+      "tavg_c": 23.9943548387,
+      "precip_mm": 2.6032258065
+    },
+    {
+      "month": 9,
+      "divvy_trips": 22077.8333333333,
+      "taxi_trips": 17611.3333333333,
+      "tavg_c": 21.74,
+      "precip_mm": 1.3583333333
+    },
+    {
+      "month": 10,
+      "divvy_trips": 19512.5806451613,
+      "taxi_trips": 18184.3548387097,
+      "tavg_c": 15.6080645161,
+      "precip_mm": 0.985483871
+    },
+    {
+      "month": 11,
+      "divvy_trips": 10978.7666666667,
+      "taxi_trips": 16889.6666666667,
+      "tavg_c": 8.2158333333,
+      "precip_mm": 2.6433333333
+    },
+    {
+      "month": 12,
+      "divvy_trips": 5641.1935483871,
+      "taxi_trips": 15388.1935483871,
+      "tavg_c": 0.4983870968,
+      "precip_mm": 1.585483871
+    }
+  ],
+  "hour_profiles": [
+    {
+      "day_type": "Federal holiday",
+      "hour": 0,
+      "divvy_trips": 178.0909090909,
+      "taxi_trips": 257.7272727273
+    },
+    {
+      "day_type": "Federal holiday",
+      "hour": 1,
+      "divvy_trips": 140.8181818182,
+      "taxi_trips": 169.1818181818
+    },
+    {
+      "day_type": "Federal holiday",
+      "hour": 2,
+      "divvy_trips": 86.2727272727,
+      "taxi_trips": 110.8181818182
+    },
+    {
+      "day_type": "Federal holiday",
+      "hour": 3,
+      "divvy_trips": 45.2727272727,
+      "taxi_trips": 79.2727272727
+    },
+    {
+      "day_type": "Federal holiday",
+      "hour": 4,
+      "divvy_trips": 37.2727272727,
+      "taxi_trips": 90.2727272727
+    },
+    {
+      "day_type": "Federal holiday",
+      "hour": 5,
+      "divvy_trips": 75.6363636364,
+      "taxi_trips": 151.0909090909
+    },
+    {
+      "day_type": "Federal holiday",
+      "hour": 6,
+      "divvy_trips": 198.0909090909,
+      "taxi_trips": 219.1818181818
+    },
+    {
+      "day_type": "Federal holiday",
+      "hour": 7,
+      "divvy_trips": 327.0,
+      "taxi_trips": 329.1818181818
+    },
+    {
+      "day_type": "Federal holiday",
+      "hour": 8,
+      "divvy_trips": 468.0909090909,
+      "taxi_trips": 437.1818181818
+    },
+    {
+      "day_type": "Federal holiday",
+      "hour": 9,
+      "divvy_trips": 492.0,
+      "taxi_trips": 571.4545454545
+    },
+    {
+      "day_type": "Federal holiday",
+      "hour": 10,
+      "divvy_trips": 577.8181818182,
+      "taxi_trips": 627.9090909091
+    },
+    {
+      "day_type": "Federal holiday",
+      "hour": 11,
+      "divvy_trips": 759.3636363636,
+      "taxi_trips": 702.3636363636
+    },
+    {
+      "day_type": "Federal holiday",
+      "hour": 12,
+      "divvy_trips": 867.7272727273,
+      "taxi_trips": 760.3636363636
+    },
+    {
+      "day_type": "Federal holiday",
+      "hour": 13,
+      "divvy_trips": 923.2727272727,
+      "taxi_trips": 802.0909090909
+    },
+    {
+      "day_type": "Federal holiday",
+      "hour": 14,
+      "divvy_trips": 922.9090909091,
+      "taxi_trips": 832.9090909091
+    },
+    {
+      "day_type": "Federal holiday",
+      "hour": 15,
+      "divvy_trips": 975.1818181818,
+      "taxi_trips": 820.2727272727
+    },
+    {
+      "day_type": "Federal holiday",
+      "hour": 16,
+      "divvy_trips": 1062.9090909091,
+      "taxi_trips": 808.8181818182
+    },
+    {
+      "day_type": "Federal holiday",
+      "hour": 17,
+      "divvy_trips": 1054.8181818182,
+      "taxi_trips": 814.6363636364
+    },
+    {
+      "day_type": "Federal holiday",
+      "hour": 18,
+      "divvy_trips": 919.5454545455,
+      "taxi_trips": 728.7272727273
+    },
+    {
+      "day_type": "Federal holiday",
+      "hour": 19,
+      "divvy_trips": 675.1818181818,
+      "taxi_trips": 685.1818181818
+    },
+    {
+      "day_type": "Federal holiday",
+      "hour": 20,
+      "divvy_trips": 515.8181818182,
+      "taxi_trips": 584.7272727273
+    },
+    {
+      "day_type": "Federal holiday",
+      "hour": 21,
+      "divvy_trips": 410.2727272727,
+      "taxi_trips": 485.7272727273
+    },
+    {
+      "day_type": "Federal holiday",
+      "hour": 22,
+      "divvy_trips": 309.0909090909,
+      "taxi_trips": 388.5454545455
+    },
+    {
+      "day_type": "Federal holiday",
+      "hour": 23,
+      "divvy_trips": 173.3636363636,
+      "taxi_trips": 269.4545454545
+    },
+    {
+      "day_type": "Weekday",
+      "hour": 0,
+      "divvy_trips": 115.2549800797,
+      "taxi_trips": 245.2270916335
+    },
+    {
+      "day_type": "Weekday",
+      "hour": 1,
+      "divvy_trips": 62.8047808765,
+      "taxi_trips": 135.4701195219
+    },
+    {
+      "day_type": "Weekday",
+      "hour": 2,
+      "divvy_trips": 36.5458167331,
+      "taxi_trips": 69.9203187251
+    },
+    {
+      "day_type": "Weekday",
+      "hour": 3,
+      "divvy_trips": 26.03187251,
+      "taxi_trips": 58.0119521912
+    },
+    {
+      "day_type": "Weekday",
+      "hour": 4,
+      "divvy_trips": 34.5816733068,
+      "taxi_trips": 90.0517928287
+    },
+    {
+      "day_type": "Weekday",
+      "hour": 5,
+      "divvy_trips": 146.593625498,
+      "taxi_trips": 179.6693227092
+    },
+    {
+      "day_type": "Weekday",
+      "hour": 6,
+      "divvy_trips": 440.4980079681,
+      "taxi_trips": 369.171314741
+    },
+    {
+      "day_type": "Weekday",
+      "hour": 7,
+      "divvy_trips": 847.6772908367,
+      "taxi_trips": 742.03187251
+    },
+    {
+      "day_type": "Weekday",
+      "hour": 8,
+      "divvy_trips": 1049.0079681275,
+      "taxi_trips": 1078.171314741
+    },
+    {
+      "day_type": "Weekday",
+      "hour": 9,
+      "divvy_trips": 635.3187250996,
+      "taxi_trips": 1135.3505976096
+    },
+    {
+      "day_type": "Weekday",
+      "hour": 10,
+      "divvy_trips": 521.0677290837,
+      "taxi_trips": 1054.8764940239
+    },
+    {
+      "day_type": "Weekday",
+      "hour": 11,
+      "divvy_trips": 634.6932270916,
+      "taxi_trips": 1118.2589641434
+    },
+    {
+      "day_type": "Weekday",
+      "hour": 12,
+      "divvy_trips": 761.9960159363,
+      "taxi_trips": 1174.8804780876
+    },
+    {
+      "day_type": "Weekday",
+      "hour": 13,
+      "divvy_trips": 768.1792828685,
+      "taxi_trips": 1206.780876494
+    },
+    {
+      "day_type": "Weekday",
+      "hour": 14,
+      "divvy_trips": 791.0039840637,
+      "taxi_trips": 1237.764940239
+    },
+    {
+      "day_type": "Weekday",
+      "hour": 15,
+      "divvy_trips": 1014.0796812749,
+      "taxi_trips": 1275.6772908367
+    },
+    {
+      "day_type": "Weekday",
+      "hour": 16,
+      "divvy_trips": 1464.4940239044,
+      "taxi_trips": 1300.0358565737
+    },
+    {
+      "day_type": "Weekday",
+      "hour": 17,
+      "divvy_trips": 1756.0916334661,
+      "taxi_trips": 1336.6892430279
+    },
+    {
+      "day_type": "Weekday",
+      "hour": 18,
+      "divvy_trips": 1373.3227091633,
+      "taxi_trips": 1222.6812749004
+    },
+    {
+      "day_type": "Weekday",
+      "hour": 19,
+      "divvy_trips": 951.9243027888,
+      "taxi_trips": 1026.9760956175
+    },
+    {
+      "day_type": "Weekday",
+      "hour": 20,
+      "divvy_trips": 666.6294820717,
+      "taxi_trips": 842.8645418327
+    },
+    {
+      "day_type": "Weekday",
+      "hour": 21,
+      "divvy_trips": 514.2231075697,
+      "taxi_trips": 675.0478087649
+    },
+    {
+      "day_type": "Weekday",
+      "hour": 22,
+      "divvy_trips": 379.3784860558,
+      "taxi_trips": 521.8366533865
+    },
+    {
+      "day_type": "Weekday",
+      "hour": 23,
+      "divvy_trips": 239.6653386454,
+      "taxi_trips": 373.9083665339
+    },
+    {
+      "day_type": "Weekend",
+      "hour": 0,
+      "divvy_trips": 332.3461538462,
+      "taxi_trips": 331.6826923077
+    },
+    {
+      "day_type": "Weekend",
+      "hour": 1,
+      "divvy_trips": 237.8173076923,
+      "taxi_trips": 213.3076923077
+    },
+    {
+      "day_type": "Weekend",
+      "hour": 2,
+      "divvy_trips": 143.2980769231,
+      "taxi_trips": 138.2596153846
+    },
+    {
+      "day_type": "Weekend",
+      "hour": 3,
+      "divvy_trips": 80.2884615385,
+      "taxi_trips": 101.3846153846
+    },
+    {
+      "day_type": "Weekend",
+      "hour": 4,
+      "divvy_trips": 53.7115384615,
+      "taxi_trips": 94.5673076923
+    },
+    {
+      "day_type": "Weekend",
+      "hour": 5,
+      "divvy_trips": 68.8173076923,
+      "taxi_trips": 122.1826923077
+    },
+    {
+      "day_type": "Weekend",
+      "hour": 6,
+      "divvy_trips": 144.75,
+      "taxi_trips": 190.0865384615
+    },
+    {
+      "day_type": "Weekend",
+      "hour": 7,
+      "divvy_trips": 263.4326923077,
+      "taxi_trips": 257.4230769231
+    },
+    {
+      "day_type": "Weekend",
+      "hour": 8,
+      "divvy_trips": 470.5,
+      "taxi_trips": 382.6923076923
+    },
+    {
+      "day_type": "Weekend",
+      "hour": 9,
+      "divvy_trips": 716.7596153846,
+      "taxi_trips": 559.5192307692
+    },
+    {
+      "day_type": "Weekend",
+      "hour": 10,
+      "divvy_trips": 961.4711538462,
+      "taxi_trips": 711.2980769231
+    },
+    {
+      "day_type": "Weekend",
+      "hour": 11,
+      "divvy_trips": 1134.75,
+      "taxi_trips": 779.0
+    },
+    {
+      "day_type": "Weekend",
+      "hour": 12,
+      "divvy_trips": 1255.4615384615,
+      "taxi_trips": 830.3076923077
+    },
+    {
+      "day_type": "Weekend",
+      "hour": 13,
+      "divvy_trips": 1287.8173076923,
+      "taxi_trips": 853.3269230769
+    },
+    {
+      "day_type": "Weekend",
+      "hour": 14,
+      "divvy_trips": 1290.4230769231,
+      "taxi_trips": 863.3942307692
+    },
+    {
+      "day_type": "Weekend",
+      "hour": 15,
+      "divvy_trips": 1310.9038461538,
+      "taxi_trips": 868.6538461538
+    },
+    {
+      "day_type": "Weekend",
+      "hour": 16,
+      "divvy_trips": 1259.9134615385,
+      "taxi_trips": 889.4615384615
+    },
+    {
+      "day_type": "Weekend",
+      "hour": 17,
+      "divvy_trips": 1135.2788461538,
+      "taxi_trips": 905.0673076923
+    },
+    {
+      "day_type": "Weekend",
+      "hour": 18,
+      "divvy_trips": 984.2115384615,
+      "taxi_trips": 880.7019230769
+    },
+    {
+      "day_type": "Weekend",
+      "hour": 19,
+      "divvy_trips": 763.6153846154,
+      "taxi_trips": 797.6442307692
+    },
+    {
+      "day_type": "Weekend",
+      "hour": 20,
+      "divvy_trips": 563.5096153846,
+      "taxi_trips": 678.1153846154
+    },
+    {
+      "day_type": "Weekend",
+      "hour": 21,
+      "divvy_trips": 466.5,
+      "taxi_trips": 573.5192307692
+    },
+    {
+      "day_type": "Weekend",
+      "hour": 22,
+      "divvy_trips": 415.0288461538,
+      "taxi_trips": 489.6346153846
+    },
+    {
+      "day_type": "Weekend",
+      "hour": 23,
+      "divvy_trips": 299.1923076923,
+      "taxi_trips": 397.1057692308
+    }
+  ],
+  "community_totals": [
+    {
+      "community_id": 1,
+      "community_name": "ROGERS PARK",
+      "divvy_trips": 48724,
+      "taxi_trips": 33564
+    },
+    {
+      "community_id": 2,
+      "community_name": "WEST RIDGE",
+      "divvy_trips": 16940,
+      "taxi_trips": 43705
+    },
+    {
+      "community_id": 3,
+      "community_name": "UPTOWN",
+      "divvy_trips": 194096,
+      "taxi_trips": 93269
+    },
+    {
+      "community_id": 4,
+      "community_name": "LINCOLN SQUARE",
+      "divvy_trips": 80216,
+      "taxi_trips": 21922
+    },
+    {
+      "community_id": 5,
+      "community_name": "NORTH CENTER",
+      "divvy_trips": 76143,
+      "taxi_trips": 14416
+    },
+    {
+      "community_id": 6,
+      "community_name": "LAKE VIEW",
+      "divvy_trips": 563415,
+      "taxi_trips": 193204
+    },
+    {
+      "community_id": 7,
+      "community_name": "LINCOLN PARK",
+      "divvy_trips": 663782,
+      "taxi_trips": 122666
+    },
+    {
+      "community_id": 8,
+      "community_name": "NEAR NORTH SIDE",
+      "divvy_trips": 1067597,
+      "taxi_trips": 1298585
+    },
+    {
+      "community_id": 9,
+      "community_name": "EDISON PARK",
+      "divvy_trips": 261,
+      "taxi_trips": 1837
+    },
+    {
+      "community_id": 10,
+      "community_name": "NORWOOD PARK",
+      "divvy_trips": 1546,
+      "taxi_trips": 14020
+    },
+    {
+      "community_id": 11,
+      "community_name": "JEFFERSON PARK",
+      "divvy_trips": 2841,
+      "taxi_trips": 7700
+    },
+    {
+      "community_id": 12,
+      "community_name": "FOREST GLEN",
+      "divvy_trips": 1581,
+      "taxi_trips": 8654
+    },
+    {
+      "community_id": 13,
+      "community_name": "NORTH PARK",
+      "divvy_trips": 8374,
+      "taxi_trips": 7514
+    },
+    {
+      "community_id": 14,
+      "community_name": "ALBANY PARK",
+      "divvy_trips": 13044,
+      "taxi_trips": 10568
+    },
+    {
+      "community_id": 15,
+      "community_name": "PORTAGE PARK",
+      "divvy_trips": 7511,
+      "taxi_trips": 9422
+    },
+    {
+      "community_id": 16,
+      "community_name": "IRVING PARK",
+      "divvy_trips": 37676,
+      "taxi_trips": 23367
+    },
+    {
+      "community_id": 17,
+      "community_name": "DUNNING",
+      "divvy_trips": 3109,
+      "taxi_trips": 2194
+    },
+    {
+      "community_id": 18,
+      "community_name": "MONTCLARE",
+      "divvy_trips": 660,
+      "taxi_trips": 749
+    },
+    {
+      "community_id": 19,
+      "community_name": "BELMONT CRAGIN",
+      "divvy_trips": 7315,
+      "taxi_trips": 4930
+    },
+    {
+      "community_id": 20,
+      "community_name": "HERMOSA",
+      "divvy_trips": 5687,
+      "taxi_trips": 778
+    },
+    {
+      "community_id": 21,
+      "community_name": "AVONDALE",
+      "divvy_trips": 25947,
+      "taxi_trips": 10652
+    },
+    {
+      "community_id": 22,
+      "community_name": "LOGAN SQUARE",
+      "divvy_trips": 183999,
+      "taxi_trips": 24535
+    },
+    {
+      "community_id": 23,
+      "community_name": "HUMBOLDT PARK",
+      "divvy_trips": 12573,
+      "taxi_trips": 4596
+    },
+    {
+      "community_id": 24,
+      "community_name": "WEST TOWN",
+      "divvy_trips": 397136,
+      "taxi_trips": 53405
+    },
+    {
+      "community_id": 25,
+      "community_name": "AUSTIN",
+      "divvy_trips": 5727,
+      "taxi_trips": 12839
+    },
+    {
+      "community_id": 26,
+      "community_name": "WEST GARFIELD PARK",
+      "divvy_trips": 868,
+      "taxi_trips": 2703
+    },
+    {
+      "community_id": 27,
+      "community_name": "EAST GARFIELD PARK",
+      "divvy_trips": 4741,
+      "taxi_trips": 5215
+    },
+    {
+      "community_id": 28,
+      "community_name": "NEAR WEST SIDE",
+      "divvy_trips": 680846,
+      "taxi_trips": 573698
+    },
+    {
+      "community_id": 29,
+      "community_name": "NORTH LAWNDALE",
+      "divvy_trips": 4620,
+      "taxi_trips": 5411
+    },
+    {
+      "community_id": 30,
+      "community_name": "SOUTH LAWNDALE",
+      "divvy_trips": 6996,
+      "taxi_trips": 3160
+    },
+    {
+      "community_id": 31,
+      "community_name": "LOWER WEST SIDE",
+      "divvy_trips": 48410,
+      "taxi_trips": 7540
+    },
+    {
+      "community_id": 32,
+      "community_name": "LOOP",
+      "divvy_trips": 642292,
+      "taxi_trips": 985269
+    },
+    {
+      "community_id": 33,
+      "community_name": "NEAR SOUTH SIDE",
+      "divvy_trips": 163265,
+      "taxi_trips": 210276
+    },
+    {
+      "community_id": 34,
+      "community_name": "ARMOUR SQUARE",
+      "divvy_trips": 35277,
+      "taxi_trips": 14551
+    },
+    {
+      "community_id": 35,
+      "community_name": "DOUGLAS",
+      "divvy_trips": 78927,
+      "taxi_trips": 39581
+    },
+    {
+      "community_id": 36,
+      "community_name": "OAKLAND",
+      "divvy_trips": 1755,
+      "taxi_trips": 13795
+    },
+    {
+      "community_id": 37,
+      "community_name": "FULLER PARK",
+      "divvy_trips": 1208,
+      "taxi_trips": 10766
+    },
+    {
+      "community_id": 38,
+      "community_name": "GRAND BOULEVARD",
+      "divvy_trips": 7557,
+      "taxi_trips": 36469
+    },
+    {
+      "community_id": 39,
+      "community_name": "KENWOOD",
+      "divvy_trips": 15449,
+      "taxi_trips": 29101
+    },
+    {
+      "community_id": 40,
+      "community_name": "WASHINGTON PARK",
+      "divvy_trips": 3650,
+      "taxi_trips": 9165
+    },
+    {
+      "community_id": 41,
+      "community_name": "HYDE PARK",
+      "divvy_trips": 180287,
+      "taxi_trips": 50428
+    },
+    {
+      "community_id": 42,
+      "community_name": "WOODLAWN",
+      "divvy_trips": 38259,
+      "taxi_trips": 17008
+    },
+    {
+      "community_id": 43,
+      "community_name": "SOUTH SHORE",
+      "divvy_trips": 5247,
+      "taxi_trips": 36038
+    },
+    {
+      "community_id": 44,
+      "community_name": "CHATHAM",
+      "divvy_trips": 1632,
+      "taxi_trips": 35247
+    },
+    {
+      "community_id": 45,
+      "community_name": "AVALON PARK",
+      "divvy_trips": 440,
+      "taxi_trips": 5598
+    },
+    {
+      "community_id": 46,
+      "community_name": "SOUTH CHICAGO",
+      "divvy_trips": 1630,
+      "taxi_trips": 13652
+    },
+    {
+      "community_id": 47,
+      "community_name": "BURNSIDE",
+      "divvy_trips": 87,
+      "taxi_trips": 2196
+    },
+    {
+      "community_id": 48,
+      "community_name": "CALUMET HEIGHTS",
+      "divvy_trips": 218,
+      "taxi_trips": 8252
+    },
+    {
+      "community_id": 49,
+      "community_name": "ROSELAND",
+      "divvy_trips": 2059,
+      "taxi_trips": 18528
+    },
+    {
+      "community_id": 50,
+      "community_name": "PULLMAN",
+      "divvy_trips": 579,
+      "taxi_trips": 9709
+    },
+    {
+      "community_id": 51,
+      "community_name": "SOUTH DEERING",
+      "divvy_trips": 883,
+      "taxi_trips": 9853
+    },
+    {
+      "community_id": 52,
+      "community_name": "EAST SIDE",
+      "divvy_trips": 1160,
+      "taxi_trips": 4337
+    },
+    {
+      "community_id": 53,
+      "community_name": "WEST PULLMAN",
+      "divvy_trips": 494,
+      "taxi_trips": 19830
+    },
+    {
+      "community_id": 54,
+      "community_name": "RIVERDALE",
+      "divvy_trips": 163,
+      "taxi_trips": 6525
+    },
+    {
+      "community_id": 55,
+      "community_name": "HEGEWISCH",
+      "divvy_trips": 656,
+      "taxi_trips": 3638
+    },
+    {
+      "community_id": 56,
+      "community_name": "GARFIELD RIDGE",
+      "divvy_trips": 1407,
+      "taxi_trips": 210898
+    },
+    {
+      "community_id": 57,
+      "community_name": "ARCHER HEIGHTS",
+      "divvy_trips": 1941,
+      "taxi_trips": 1614
+    },
+    {
+      "community_id": 58,
+      "community_name": "BRIGHTON PARK",
+      "divvy_trips": 3371,
+      "taxi_trips": 2778
+    },
+    {
+      "community_id": 59,
+      "community_name": "MCKINLEY PARK",
+      "divvy_trips": 4076,
+      "taxi_trips": 7953
+    },
+    {
+      "community_id": 60,
+      "community_name": "BRIDGEPORT",
+      "divvy_trips": 27426,
+      "taxi_trips": 4357
+    },
+    {
+      "community_id": 61,
+      "community_name": "NEW CITY",
+      "divvy_trips": 3819,
+      "taxi_trips": 5928
+    },
+    {
+      "community_id": 62,
+      "community_name": "WEST ELSDON",
+      "divvy_trips": 804,
+      "taxi_trips": 1936
+    },
+    {
+      "community_id": 63,
+      "community_name": "GAGE PARK",
+      "divvy_trips": 1946,
+      "taxi_trips": 1112
+    },
+    {
+      "community_id": 64,
+      "community_name": "CLEARING",
+      "divvy_trips": 487,
+      "taxi_trips": 1551
+    },
+    {
+      "community_id": 65,
+      "community_name": "WEST LAWN",
+      "divvy_trips": 1356,
+      "taxi_trips": 2268
+    },
+    {
+      "community_id": 66,
+      "community_name": "CHICAGO LAWN",
+      "divvy_trips": 1937,
+      "taxi_trips": 6118
+    },
+    {
+      "community_id": 67,
+      "community_name": "WEST ENGLEWOOD",
+      "divvy_trips": 1588,
+      "taxi_trips": 6191
+    },
+    {
+      "community_id": 68,
+      "community_name": "ENGLEWOOD",
+      "divvy_trips": 2268,
+      "taxi_trips": 15350
+    },
+    {
+      "community_id": 69,
+      "community_name": "GREATER GRAND CROSSING",
+      "divvy_trips": 2069,
+      "taxi_trips": 28981
+    },
+    {
+      "community_id": 70,
+      "community_name": "ASHBURN",
+      "divvy_trips": 1122,
+      "taxi_trips": 5177
+    },
+    {
+      "community_id": 71,
+      "community_name": "AUBURN GRESHAM",
+      "divvy_trips": 1275,
+      "taxi_trips": 12998
+    },
+    {
+      "community_id": 72,
+      "community_name": "BEVERLY",
+      "divvy_trips": 1547,
+      "taxi_trips": 5510
+    },
+    {
+      "community_id": 73,
+      "community_name": "WASHINGTON HEIGHTS",
+      "divvy_trips": 698,
+      "taxi_trips": 12126
+    },
+    {
+      "community_id": 74,
+      "community_name": "MOUNT GREENWOOD",
+      "divvy_trips": 437,
+      "taxi_trips": 1557
+    },
+    {
+      "community_id": 75,
+      "community_name": "MORGAN PARK",
+      "divvy_trips": 1185,
+      "taxi_trips": 12218
+    },
+    {
+      "community_id": 76,
+      "community_name": "OHARE",
+      "divvy_trips": 517,
+      "taxi_trips": 1341310
+    },
+    {
+      "community_id": 77,
+      "community_name": "EDGEWATER",
+      "divvy_trips": 83323,
+      "taxi_trips": 72209
+    }
+  ],
+  "clusters": [
+    {
+      "cluster": "类别 A",
+      "taxi_trips": 14758.716049382716,
+      "tavg_c": 4.9393518518518515,
+      "precip_mm": 0.8688271604938271,
+      "wind_mps": 4.993518518518519,
+      "days": 162
+    },
+    {
+      "cluster": "类别 B",
+      "taxi_trips": 17404.083333333332,
+      "tavg_c": 17.049305555555556,
+      "precip_mm": 18.155555555555555,
+      "wind_mps": 4.723611111111111,
+      "days": 36
+    },
+    {
+      "cluster": "类别 C",
+      "taxi_trips": 18394.738095238095,
+      "tavg_c": 20.16026785714286,
+      "precip_mm": 0.7235119047619047,
+      "wind_mps": 3.5717261904761903,
+      "days": 168
+    }
+  ]
+}

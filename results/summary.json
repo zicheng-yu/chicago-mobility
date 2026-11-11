@@ -1,0 +1,127 @@
+{
+  "period": [
+    "2024-01-01",
+    "2024-12-31"
+  ],
+  "days": 366,
+  "counts": {
+    "divvy": {
+      "raw": 5860568,
+      "cleaned": 5583690,
+      "retained_pct": 95.27557738430814,
+      "daily_min": 540,
+      "daily_max": 31388,
+      "daily_mean": 15255.983606557376
+    },
+    "taxi": {
+      "raw": 6480350,
+      "cleaned": 6107775,
+      "retained_pct": 94.25069633584606,
+      "daily_min": 5088,
+      "daily_max": 24924,
+      "daily_mean": 16687.909836065573
+    }
+  },
+  "rain_days": 98,
+  "holiday_days": 11,
+  "spatial_match_rates": {
+    "divvy": 0.9850392840576752,
+    "taxi": 0.9769138516071728
+  },
+  "models": {
+    "divvy": {
+      "precip_10mm": {
+        "mode": "divvy",
+        "term": "precip_10mm",
+        "coef": -0.20862921980746052,
+        "se_hac7": 0.057463923507226226,
+        "percent": -18.83038592935198,
+        "low_percent": -27.476425385162806,
+        "high_percent": -9.153592009652051,
+        "r2": 0.8821781510477588,
+        "n": 366
+      },
+      "holiday": {
+        "mode": "divvy",
+        "term": "holiday",
+        "coef": -0.29749800524020736,
+        "se_hac7": 0.1577435766712172,
+        "percent": -25.732593532433206,
+        "low_percent": -45.48397089351649,
+        "high_percent": 1.1747875591843893,
+        "r2": 0.8821781510477588,
+        "n": 366
+      }
+    },
+    "taxi": {
+      "precip_10mm": {
+        "mode": "taxi",
+        "term": "precip_10mm",
+        "coef": 0.018162222054831055,
+        "se_hac7": 0.010399712608246977,
+        "percent": 1.832815827768701,
+        "low_percent": -0.22187495855450282,
+        "high_percent": 3.929818034813108,
+        "r2": 0.7230139897654041,
+        "n": 366
+      },
+      "holiday": {
+        "mode": "taxi",
+        "term": "holiday",
+        "coef": -0.4935658041670623,
+        "se_hac7": 0.10850310065602085,
+        "percent": -38.95542214301604,
+        "low_percent": -50.64997341733219,
+        "high_percent": -24.489595167793947,
+        "r2": 0.7230139897654041,
+        "n": 366
+      }
+    }
+  },
+  "model_rows": 366,
+  "spatial_comparable_communities": 22,
+  "community_precip_counts": {
+    "compared": 22,
+    "bicycle_lower": 22,
+    "taxi_lower": 12,
+    "taxi_higher": 10
+  },
+  "clustering": {
+    "k": 3,
+    "random_state": 42,
+    "n_init": 20,
+    "features": [
+      "taxi_trips",
+      "tavg_c",
+      "precip_mm",
+      "wind_mps"
+    ],
+    "silhouette": 0.29020975265209464,
+    "profiles": [
+      {
+        "cluster": "类别 A",
+        "taxi_trips": 14758.716049382716,
+        "tavg_c": 4.9393518518518515,
+        "precip_mm": 0.8688271604938271,
+        "wind_mps": 4.993518518518519,
+        "days": 162
+      },
+      {
+        "cluster": "类别 B",
+        "taxi_trips": 17404.083333333332,
+        "tavg_c": 17.049305555555556,
+        "precip_mm": 18.155555555555555,
+        "wind_mps": 4.723611111111111,
+        "days": 36
+      },
+      {
+        "cluster": "类别 C",
+        "taxi_trips": 18394.738095238095,
+        "tavg_c": 20.16026785714286,
+        "precip_mm": 0.7235119047619047,
+        "wind_mps": 3.5717261904761903,
+        "days": 168
+      }
+    ]
+  }
+}

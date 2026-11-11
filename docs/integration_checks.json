@@ -1,0 +1,12 @@
+{
+  "daily_rows": 366,
+  "hourly_rows": 8784,
+  "community_daily_rows": 28182,
+  "unique_dates": 366,
+  "calendar_holidays": 11,
+  "community_count": 77,
+  "divvy_cleaned_rows": 5583690,
+  "divvy_spatial_match_rate": 0.9850392840576752,
+  "taxi_cleaned_rows": 6107775,
+  "taxi_spatial_match_rate": 0.9769138516071728
+}

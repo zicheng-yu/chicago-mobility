@@ -1,0 +1,22 @@
+{
+  "method": "5 source rows per processing chunk before filtering, matching retained rows after cleaning",
+  "random_seed": 42,
+  "raw_sample_rows": 230,
+  "cleaned_sample_rows": 212,
+  "source_files": [
+    "202401-divvy-tripdata.csv",
+    "202402-divvy-tripdata.csv",
+    "202403-divvy-tripdata.csv",
+    "202404-divvy-tripdata.csv",
+    "202405-divvy-tripdata.csv",
+    "202406-divvy-tripdata.csv",
+    "202407-divvy-tripdata.csv",
+    "202408-divvy-tripdata.csv",
+    "202409-divvy-tripdata.csv",
+    "202410-divvy-tripdata.csv",
+    "202411-divvy-tripdata.csv",
+    "202412-divvy-tripdata.csv"
+  ],
+  "purpose": "Schema and processing examples across available source files; not an unbiased statistical sample",
+  "added_provenance_field": "_source_file"
+}
