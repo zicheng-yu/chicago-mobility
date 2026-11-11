@@ -1,0 +1,14 @@
+{
+  "canonical": "deliverables/展示PPT.pptx",
+  "sha256": "836b12e4c20c2315ef7bc2c0fb79eb10b84fe482962e26f4385cb2b28684c764",
+  "bytes": 2437761,
+  "slides": 10,
+  "native_charts": 4,
+  "embedded_workbooks": 4,
+  "native_maps": 2,
+  "native_confidence_interval_figure": true,
+  "native_heat_table": true,
+  "data_and_report_unchanged": true,
+  "cover_asset": "presentation/assets/chicago-rain-cover.png",
+  "cover_generation_prompt": "presentation/assets/README.md"
+}

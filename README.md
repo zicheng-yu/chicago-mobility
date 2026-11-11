@@ -12,6 +12,8 @@
 
 完整结果见 `deliverables/`、`results/` 和 `docs/scale_audit.json`。
 
+展示 PPT 已按课堂展示重新设计，采用城市雨夜示意封面、原生置信区间图、可编辑社区地图及热力表。当前版本为 `deliverables/展示PPT.pptx`，构建源为 `presentation/redesign_deck.mjs`，封面素材和完整生成提示词保存在 `presentation/assets/README.md`。数据、统计结果和报告内容保持原核验版本。
+
 ## 研究问题
 
 1. 控制月份、星期与温度后，降水与两种出行方式的每日记录量有什么关系？
